@@ -1,0 +1,16 @@
+.main {
+    margin: 4rem;
+
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+        font-family: Tahoma;
+    }
+
+    &__text {
+        font-size: 1.1rem;
+        margin: 3rem 1rem 0 1rem;
+        line-height: 1.5rem;
+        text-indent: 1rem;
+    }
+}
