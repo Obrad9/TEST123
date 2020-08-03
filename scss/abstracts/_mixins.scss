@@ -1,0 +1,35 @@
+//CARD MIXINS
+
+// rounded image
+@mixin rounded-image {
+    position: absolute;
+    top: 90px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+// card button
+@mixin card-button {
+    position: absolute;
+    top: 500px;
+    padding: 1rem 4rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+// card text {
+@mixin card-text {
+    font-size: 0.8rem;
+    color: white;
+    margin: 0 1rem;
+}
+
+// flex center
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

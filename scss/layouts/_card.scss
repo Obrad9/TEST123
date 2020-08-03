@@ -1,110 +1,82 @@
 .card {
     position: relative;
-    margin: 2rem;
+    margin: 4rem 2rem; 
 
     &__deck {
-        display: flex;
-        justify-content: center;
+        @include flex;
     }
 
     &__part {
         margin: 0 1rem;
         flex-basis: 300px;
         text-align: center;
-        background-color: rgb(231, 69, 69);
         border-radius: 0.8em;
         opacity: 0.7;
         box-shadow: 2px 2px 10px black;
 
         //first card
         &:nth-child(1) {
+            background-color: $card-first;
+
             .card__image--rounded {
-                position: absolute;
-                top: 90px;
+                @include rounded-image;
                 left: 265px;
-                border-radius: 50%;
-                border: 2px solid white;
             }
+
             .card__button { 
-                position: absolute;
-                top: 500px;
+                @include card-button;
                 left: 210px;
-                padding: 1rem 4rem;
-                background-color: rgb(228, 4, 34);
-                color: white;
-                border: 1px solid rgb(247, 158, 158);
-                border-radius: 0.5rem;
-                font-size: 1.2rem;
-                font-weight: bolder;
-                cursor: pointer;
+                background-color: $card-first;
         
                 &:hover {
-                    background-color: rgb(179, 3, 27);
+                    background-color: rgb(179, 3, 27);                 
                 }
             }
         }
 
         //second card
         &:nth-child(2) {
-            background-color: rgb(7, 142, 252);
+            background-color: $card-second;
+
             .card__image--rounded {
-                position: absolute;
-                top: 90px;
+                @include rounded-image;
                 left: 590px;
-                border-radius: 50%;
-                border: 2px solid white;
             }
 
             .card__button {
-                position: absolute;
-                top: 500px;
+                @include card-button;
                 left: 540px;
-                padding: 1rem 4rem;
-                background-color: rgb(228, 4, 34);
-                color: white;
-                border: 1px solid rgb(247, 158, 158);
-                border-radius: 0.5rem;
-                font-size: 1.2rem;
-                font-weight: bolder;
-                cursor: pointer;
+                background-color: $card-second;
     
                 &:hover {
-                    background-color: rgb(179, 3, 27);
+                    background-color: rgb(3, 94, 168);
                 }
             }
         }
-        
+
         //third card
         &:nth-child(3) {
-            background-color: rgb(90, 184, 3);
+            background-color: $card-third;
+
             .card__image--rounded {
-                position: absolute;
-                top: 90px;
+                @include rounded-image;
                 left: 925px;
-                border-radius: 50%;
-                border: 2px solid white;
             }
+            
             .card__button {
-                position: absolute;
-                top: 500px;
+                @include card-button;
                 left: 870px;
-                padding: 1rem 4rem;
-                background-color: rgb(228, 4, 34);
-                color: white;
-                border: 1px solid rgb(247, 158, 158);
-                border-radius: 0.5rem;
-                font-size: 1.2rem;
-                font-weight: bolder;
-                cursor: pointer;
+                background-color: $card-third;
     
                 &:hover {
-                    background-color: rgb(179, 3, 27);
+                    background-color: rgb(58, 121, 0);
                 }
             }
         }
         //hover effect for all cards
         &:hover {
             opacity: 1;
+            transition: 0.5s;
         }
     }
 
@@ -133,16 +105,12 @@
     }
 
     &__text {
-        font-size: 0.8rem;
+        @include card-text;
         padding: 0.8rem;
-        color: white;
-        margin: 0 1rem;
 
         &--bottom {
-            font-size: 0.8rem;
+            @include card-text;
             padding: 0.8rem 0.8rem 4rem 0.8rem;
-            color: white;
-            margin: 0 1rem;
         }
     }
 }
