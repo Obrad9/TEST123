@@ -29,7 +29,7 @@
                 background-color: $card-first;
         
                 &:hover {
-                    background-color: rgb(179, 3, 27);                 
+                    background-color: darken($card-first, 15%);                 
                 }
             }
         }
@@ -49,7 +49,7 @@
                 background-color: $card-second;
     
                 &:hover {
-                    background-color: rgb(3, 94, 168);
+                    background-color: darken($card-second, 15%);
                 }
             }
         }
@@ -69,7 +69,7 @@
                 background-color: $card-third;
     
                 &:hover {
-                    background-color: rgb(58, 121, 0);
+                    background-color: darken($card-third, 15%);
                 }
             }
         }

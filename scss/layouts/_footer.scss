@@ -1,0 +1,74 @@
+.footer {
+  
+
+    &-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+        background-color: lightgray;
+    }
+
+    &__logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    &__nav {
+        flex: 2;
+        text-align: center;
+        display: flex;
+    }
+
+    &__list {
+        list-style: none;
+        flex: 1;
+    }
+
+    &__header {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    &__item {
+        line-height: 1.8rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: black;
+
+        &:hover {
+            //color: rgb(63, 63, 63);
+            color: rgb(121, 121, 121);
+        }
+    }
+
+    &__media {
+        flex: 1;
+        text-align: center;
+
+        .footer__text {
+            font-size: 1.5rem;
+            padding: 1rem 0;
+        }
+
+        .media__link {
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+            padding: 2px;
+
+            &:hover {
+                color: rgb(94, 94, 94);
+            }
+        }
+    }
+
+    &-bot {
+        background-color: rgb(172, 172, 172);
+        padding: 0.5rem 2rem;
+        font-weight: 600;
+    }
+}

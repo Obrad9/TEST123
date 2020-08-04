@@ -461,7 +461,7 @@ template {
   background-color: #e74545;
 }
 .card__part:nth-child(1) .card__button:hover {
-  background-color: #b3031b;
+  background-color: #c61a1a;
 }
 .card__part:nth-child(2) {
   background-color: #078efc;
@@ -487,7 +487,7 @@ template {
   background-color: #078efc;
 }
 .card__part:nth-child(2) .card__button:hover {
-  background-color: #035ea8;
+  background-color: #0264b4;
 }
 .card__part:nth-child(3) {
   background-color: #5ab803;
@@ -513,7 +513,7 @@ template {
   background-color: #5ab803;
 }
 .card__part:nth-child(3) .card__button:hover {
-  background-color: #3a7900;
+  background-color: #356d02;
 }
 .card__part:hover {
   opacity: 1;
@@ -553,6 +553,9 @@ template {
   padding: 0.8rem 0.8rem 4rem 0.8rem;
 }
 
+.sponsor {
+  background-color: #fdebeb;
+}
 .sponsor__header {
   text-align: center;
   font-size: 3rem;
@@ -585,7 +588,7 @@ template {
   left: 0;
   transition: 1.5s;
 }
-.sponsor__slide-image .img {
+.sponsor__img {
   width: 100%;
   height: 300px;
   opacity: 0.5;
@@ -598,4 +601,62 @@ template {
   font-family: Tahoma;
   background-color: rgba(255, 255, 255, 0.4);
   padding: 1rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  background-color: lightgray;
+}
+.footer__logo {
+  flex: 1;
+  text-align: center;
+}
+.footer__nav {
+  flex: 2;
+  text-align: center;
+  display: flex;
+}
+.footer__list {
+  list-style: none;
+  flex: 1;
+}
+.footer__header {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.footer__item {
+  line-height: 1.8rem;
+}
+.footer__link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+.footer__link:hover {
+  color: #797979;
+}
+.footer__media {
+  flex: 1;
+  text-align: center;
+}
+.footer__media .footer__text {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.footer__media .media__link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  padding: 2px;
+}
+.footer__media .media__link:hover {
+  color: #5e5e5e;
+}
+.footer-bot {
+  background-color: #acacac;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
 }
