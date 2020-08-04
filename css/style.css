@@ -422,7 +422,7 @@ template {
 
 .card {
   position: relative;
-  margin: 4rem 2rem;
+  padding: 4rem 2rem;
 }
 .card__deck {
   display: flex;
@@ -441,15 +441,14 @@ template {
   background-color: #e74545;
 }
 .card__part:nth-child(1) .card__image--rounded {
-  position: absolute;
-  top: 90px;
+  position: relative;
+  top: -50px;
   border-radius: 50%;
   border: 2px solid white;
-  left: 265px;
 }
 .card__part:nth-child(1) .card__button {
-  position: absolute;
-  top: 500px;
+  position: relative;
+  top: 20px;
   padding: 1rem 4rem;
   color: white;
   border: 1px solid white;
@@ -457,7 +456,6 @@ template {
   font-size: 1.2rem;
   font-weight: bolder;
   cursor: pointer;
-  left: 210px;
   background-color: #e74545;
 }
 .card__part:nth-child(1) .card__button:hover {
@@ -467,15 +465,14 @@ template {
   background-color: #078efc;
 }
 .card__part:nth-child(2) .card__image--rounded {
-  position: absolute;
-  top: 90px;
+  position: relative;
+  top: -50px;
   border-radius: 50%;
   border: 2px solid white;
-  left: 590px;
 }
 .card__part:nth-child(2) .card__button {
-  position: absolute;
-  top: 500px;
+  position: relative;
+  top: 20px;
   padding: 1rem 4rem;
   color: white;
   border: 1px solid white;
@@ -483,7 +480,6 @@ template {
   font-size: 1.2rem;
   font-weight: bolder;
   cursor: pointer;
-  left: 540px;
   background-color: #078efc;
 }
 .card__part:nth-child(2) .card__button:hover {
@@ -493,15 +489,14 @@ template {
   background-color: #5ab803;
 }
 .card__part:nth-child(3) .card__image--rounded {
-  position: absolute;
-  top: 90px;
+  position: relative;
+  top: -50px;
   border-radius: 50%;
   border: 2px solid white;
-  left: 925px;
 }
 .card__part:nth-child(3) .card__button {
-  position: absolute;
-  top: 500px;
+  position: relative;
+  top: 20px;
   padding: 1rem 4rem;
   color: white;
   border: 1px solid white;
@@ -509,7 +504,6 @@ template {
   font-size: 1.2rem;
   font-weight: bolder;
   cursor: pointer;
-  left: 870px;
   background-color: #5ab803;
 }
 .card__part:nth-child(3) .card__button:hover {
@@ -527,7 +521,6 @@ template {
 .card__header {
   text-transform: uppercase;
   color: #d8d8d8;
-  padding-top: 5rem;
   margin: 0;
   margin-bottom: 1rem;
   white-space: nowrap;
@@ -550,7 +543,7 @@ template {
   font-size: 0.8rem;
   color: white;
   margin: 0 1rem;
-  padding: 0.8rem 0.8rem 4rem 0.8rem;
+  padding: 0.8rem 0.8rem 2rem 0.8rem;
 }
 
 .sponsor {
@@ -628,11 +621,11 @@ template {
   font-size: 1.5rem;
 }
 .footer__item {
-  line-height: 1.8rem;
+  line-height: 1.7rem;
 }
 .footer__link {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: black;
 }
 .footer__link:hover {

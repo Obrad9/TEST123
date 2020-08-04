@@ -2,15 +2,18 @@
 
 // rounded image
 @mixin rounded-image {
-    position: absolute;
-    top: 90px;
-    border-radius: 50%;
-    border: 2px solid white;
+    .card__image--rounded {
+        position: relative;
+        top: -50px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
 }
+
 // card button
 @mixin card-button {
-    position: absolute;
-    top: 500px;
+    position: relative;
+    top: 20px;
     padding: 1rem 4rem;
     color: white;
     border: 1px solid white;
