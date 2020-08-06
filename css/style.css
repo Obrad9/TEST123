@@ -412,7 +412,7 @@ template {
 .main__text {
   font-size: 1.1rem;
   margin: 3rem 1rem 0 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   text-indent: 1rem;
 }
 
@@ -621,7 +621,7 @@ template {
   font-size: 1.5rem;
 }
 .footer__item {
-  line-height: 1.7rem;
+  line-height: 1.5;
 }
 .footer__link {
   text-decoration: none;
